@@ -1,5 +1,5 @@
 {
-  "homepage": "https://shanmukhsrinadh.github.io/Fashiquecomstore01/",
+  "homepage": "https://shanmukhsrinadh.github.io/Fashique/",
   "name": "myrect",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +15,10 @@
     "@toolpad/core": "^0.12.0",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.4.1",
+    "gh": "^2.8.9",
     "lucide-react": "^0.475.0",
     "mdb-react-ui-kit": "^9.0.0",
+    "pages": "^0.0.16",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
