@@ -20,14 +20,12 @@ export default function MiniDrawer() {
 
   const handleDrawerOpen = () => setOpen(true);
   const handleDrawerClose = () => setOpen(false);
-  const handleSectionChange = (section) => setActiveSection(section);
-
-  // Automatically close the drawer on mobile when a section is selected
-  React.useEffect(() => {
-    if (isMobile && open) {
-      setOpen(false);
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+    if (isMobile) {
+      setOpen(false); // Close the drawer only on mobile when a section is selected
     }
-  }, [activeSection, isMobile, open]);
+  };
 
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f5f5f5' }}>
@@ -36,7 +34,7 @@ export default function MiniDrawer() {
         handleDrawerOpen={handleDrawerOpen}
         handleDrawerClose={handleDrawerClose}
         handleSectionChange={handleSectionChange}
-        isMobile={isMobile} // Pass isMobile prop to adjust drawer behavior
+        isMobile={isMobile}
       />
       <MainContent
         activeSection={activeSection}
