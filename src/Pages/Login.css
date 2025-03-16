@@ -1,0 +1,326 @@
+.animation-area {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, white 50%, #212121 50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cards-downward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  z-index: 0;
+  margin-left: -10%;
+}
+
+.card {
+  width: 300px;
+  height: 460px !important;
+  background-color: #EBEBDF;
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  opacity: 1;
+  visibility: hidden;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+.card.opposite {
+  width: 300px;
+  height: 470px;
+  background-color: #EBEBDF;
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  opacity: 1;
+  visibility: hidden;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+.card img,
+.card.opposite img {
+  width: 200%; /* Set width to 100% to fill the card */
+  height: 130%; /* Set height to 100% to fill the card */
+  object-fit: cover; /* Ensure the image covers the card without distortion */
+  transform: rotate(270deg); /* Remove rotation for now to debug */
+  position: absolute; /* Position the image absolutely within the card */
+  top: 0;
+  left: 0;
+}
+@keyframes moveCardOpposite {
+  0% {
+    transform: rotate(45deg) translate(0vw, -100vh);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  20% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: rotate(45deg) translate(0vw, 180vh);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes moveCardUp {
+  0% {
+    transform: rotate(45deg) translate(0vw, 180vh);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  20% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: rotate(45deg) translate(0vw, -100vh);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.cards-upward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  margin-left: -10%;
+}
+
+.cards-upward .card.opposite:nth-child(1) {
+  animation: moveCardUp 10s linear infinite;
+  animation-delay: 0s;
+}
+
+.cards-upward .card.opposite:nth-child(2) {
+  animation: moveCardUp 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.cards-upward .card.opposite:nth-child(3) {
+  animation: moveCardUp 10s linear infinite;
+  animation-delay: 4s;
+}
+.cards-upward .card.opposite:nth-child(4) {
+  animation: moveCardUp 10s linear infinite;
+  animation-delay: 6s;
+}
+.cards-upward .card.opposite:nth-child(5) {
+  animation: moveCardUp 10s linear infinite;
+  animation-delay: 8s;
+}
+.cards-downward .card.opposite:nth-child(1) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 0s;
+}
+
+.cards-downward .card.opposite:nth-child(2) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 2s;
+}
+
+.cards-downward .card.opposite:nth-child(3) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 4s;
+}
+
+.cards-downward .card.opposite:nth-child(4) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 6s;
+}
+
+.cards-downward .card.opposite:nth-child(5) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 8s;
+}
+
+.cards-downward .card.opposite:nth-child(4) {
+  animation: moveCardOpposite 10s linear infinite;
+  animation-delay: 6s;
+}
+
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  width: 640px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: ##212121;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #212121;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: black;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background: transparent;
+  z-index: 1;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #212121;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+  top: 0.25rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  color: #212121;
+  background: white;
+  padding: 0 0.25rem;
+  z-index: 2;
+}
+
+
+.form-group input:focus {
+  border-color: #212121;
+  box-shadow: #212121;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-media a {
+  color: #212121;
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+  color: gray;
+}
+
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.remember-me label {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.remember-me a {
+  font-size: 0.9rem;
+  color: #212121;
+  text-decoration: none;
+}
+
+.remember-me a:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.register-link a {
+  color: #191265;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
