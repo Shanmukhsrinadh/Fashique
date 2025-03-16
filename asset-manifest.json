@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fashique/static/css/main.94ba1d91.css",
-    "main.js": "/Fashique/static/js/main.f00fffcf.js",
+    "main.js": "/Fashique/static/js/main.fe0611cd.js",
     "static/media/fa-solid-900.ttf": "/Fashique/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/Fashique/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/Fashique/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
@@ -12,10 +12,10 @@
     "static/media/fa-v4compatibility.woff2": "/Fashique/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Fashique/index.html",
     "main.94ba1d91.css.map": "/Fashique/static/css/main.94ba1d91.css.map",
-    "main.f00fffcf.js.map": "/Fashique/static/js/main.f00fffcf.js.map"
+    "main.fe0611cd.js.map": "/Fashique/static/js/main.fe0611cd.js.map"
   },
   "entrypoints": [
     "static/css/main.94ba1d91.css",
-    "static/js/main.f00fffcf.js"
+    "static/js/main.fe0611cd.js"
   ]
 }
